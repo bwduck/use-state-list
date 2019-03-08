@@ -1,0 +1,5 @@
+# .npmignore 
+src
+tests
+.babelrc
+.gitignore
