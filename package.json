@@ -1,21 +1,17 @@
 {
   "name": "use-state-list",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
-  "main": "use-state-list.js",
+  "main": "dist/useStateList.min.js",
   "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c -o dist/useStateList.min.js",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
-  "peerDependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
-  },
   "dependencies": {
-    "@babel/runtime": "^7.3.4",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "@babel/runtime": "^7.3.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -26,7 +22,16 @@
     "@babel/preset-react": "^7.0.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
+    "babel-preset-react": "^6.24.1",
     "jest": "^24.3.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "rollup": "^1.6.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-size-snapshot": "^0.8.0",
+    "rollup-plugin-terser": "^4.0.4",
     "waait": "^1.0.4"
   },
   "jest": {

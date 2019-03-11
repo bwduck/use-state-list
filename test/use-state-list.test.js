@@ -1,7 +1,7 @@
 import React from 'react';
 import { configure, mount } from 'enzyme';
 import wait from 'waait';
-import useStateList from './use-state-list';
+import useStateList from '../src/use-state-list';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
