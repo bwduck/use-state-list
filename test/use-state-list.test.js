@@ -19,6 +19,17 @@ describe('useStateList hook', () => {
     expect(check).toBeCalledWith(listLength);
   });
 
+  it('initializes a list with correct default values', () => {
+    const check = jest.fn();
+    const Test = () => {
+      const [state, setState] = useStateList(listLength, 5);
+      check(state.join(','));
+      return null;
+    };
+    mount(<Test />);
+    expect(check).toBeCalledWith('5,5,5,5,5');
+  });
+
   it('sets the correct index', async () => {
     const check = jest.fn();
     const Test = () => {

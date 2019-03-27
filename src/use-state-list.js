@@ -6,8 +6,8 @@ const update = (idx, value, state) => [
   ...state.slice(idx + 1),
 ];
 
-const useStateList = length => {
-  const [state, setState] = useState([...Array(length)]);
+const useStateList = (length, defaultValue) => {
+  const [state, setState] = useState([...Array(length).fill(defaultValue)]);
 
   const setListState = (idx, value) => setState(update(idx, value, state));
 

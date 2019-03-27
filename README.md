@@ -15,6 +15,9 @@
 
 ## Use
 
+`useStateList(length, defaultValue)`
+Default value is optional
+
 ```JavaScript
 import useStateList from 'use-state-list';
 
