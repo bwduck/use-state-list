@@ -16,7 +16,7 @@
 ## Use
 
 `useStateList(length, defaultValue)`
-Default value is optional
+Default value is optional.  How do you like that?
 
 ```JavaScript
 import useStateList from 'use-state-list';

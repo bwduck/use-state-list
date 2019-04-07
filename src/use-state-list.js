@@ -6,6 +6,7 @@ const update = (idx, value, state) => [
   ...state.slice(idx + 1),
 ];
 
+// useStateList functional component
 const useStateList = (length, defaultValue) => {
   const [state, setState] = useState([...Array(length).fill(defaultValue)]);
 
